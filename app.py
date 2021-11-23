@@ -124,7 +124,7 @@ def reply(intent,text,reply_token,id,disname):
     text_message = TextSendMessage(text="ทดสอบ")
     line_bot_api.reply_message(reply_token,text_message)
 
-def event_handle(event,json_ljne):
+def event_handle(event,json_lne):
     print(event)
     try:
         userId = event['source']['userId']
